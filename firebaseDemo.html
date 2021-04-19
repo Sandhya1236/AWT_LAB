@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FIREBASE CRUD OPERATIONS</title>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="crud.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <label>STUDENT NAME:</label>
+            <input type="text" id="uname">
+        </div>
+        <div class="row">
+            <label>ROLL NUMBER:</label>
+            <input type="text" id="rno">
+        </div>
+        <div class="row">
+            <label>BRANCH&SECTION</label>
+            <input type="text" id="bns">
+        </div>
+        <div class="row">
+            <button class="btn-success" id="REGISTER" onclick="createStudent()">REGISTER</button>
+            <button class="btn-primary" id="DISPLAY" onclick="displayStudent()">DISPLAY</button>
+            <button class="btn-outline-dark" id="UPDATE" onclick="updateStudent()">UPDATE</button>
+            <button class="btn-danger" id="DELETE" onclick="deleteStudent()">DELETE</button>
+        </div>
+        <div id="studentList"></div>
+    </div>
+    
+</body>
+</html>
